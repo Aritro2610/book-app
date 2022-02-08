@@ -1,0 +1,19 @@
+<div>
+    <h2> <%= book.title %></h2>
+</div>
+<img src="<%= book.coverImagePath %>" alt="Book Image">
+<div>
+    <h3>Date: <%= book.PublishDate.toDateString()%></h3>
+</div>
+<div>
+    <h3>Author:</h3><%= book.author.name %>
+</div>
+<div>
+    <h3>Description:</h3><%= book.description%>
+</div>
+<div>
+    <h3>Page No:</h3><%= book.pageno%>
+</div>
+<!-- <a href="/books">Back</a> -->
+<a href="/books/<%= book.id%>/edit">Edit</a>
+<%- include('../partials/deleteform',{url:`/books/${book.id}`}) %>

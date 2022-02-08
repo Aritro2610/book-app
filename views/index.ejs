@@ -1,0 +1,18 @@
+<h2>Recently Added Books</h2>
+
+<div>
+    <% books.forEach(book=>{%>
+        <label><%= book.title %></label>
+        <img height="150" width="100" src="<%= book.coverImagePath %>">
+    <%})%>
+</div>
+<br>
+<h2>Recently Added Authors</h2>
+
+<div>
+    <% authors.forEach(author=>{%>
+        <div><%= author.name %></div>
+    <%})%>
+
+</div>
+
