@@ -1,9 +1,9 @@
-.authors{
+.author_name{
     font-size: 1em;
     font-weight: 500;
     color:  cyan;
 }
-.authors:hover{
+.author_name:hover{
     background-color: blue;
     color: white;
 }
